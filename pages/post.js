@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-unfetch'
-import Layout from '../comp/MyLayout.js'
+import dynamic from 'next/dynamic'
+const Layout = dynamic(import('../comp/MyLayout'))
 
 const Post =  (props) => (
   <Layout>

@@ -1,6 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
-import Layout from '../comp/MyLayout'
+import dynamic from 'next/dynamic'
+const Layout = dynamic(import('../comp/MyLayout'))
 
 // The only requirement for components placed inside a Link
 // is they should accept an onClick prop.
